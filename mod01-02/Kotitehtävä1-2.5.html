@@ -1,0 +1,34 @@
+!DOCTYPE html>
+
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>Karkausvuoden tarkistus</title>
+</head>
+<body>
+    <h1>Karkausvuoden tarkistus</h1>
+
+<p id="tulos"></p>
+
+<script>
+    "use strict";
+
+    const vuosi = parseInt(prompt("Anna vuosiluku:"), 10);
+
+    if (vuosi % 400 === 0) {
+        document.querySelector("#tulos").innerHTML =
+            vuosi + " on karkausvuosi.";
+    } else if (vuosi % 100 === 0) {
+        document.querySelector("#tulos").innerHTML =
+            vuosi + " ei ole karkausvuosi.";
+    } else if (vuosi % 4 === 0) {
+        document.querySelector("#tulos").innerHTML =
+            vuosi + " on karkausvuosi.";
+    } else {
+        document.querySelector("#tulos").innerHTML =
+            vuosi + " ei ole karkausvuosi.";
+    }
+</script>
+
+</body>
+</html>

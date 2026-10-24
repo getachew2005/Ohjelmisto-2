@@ -1,19 +1,2 @@
-prompt("Mikä on nimesi?");
-
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>JavaScriptin testaus</title>
-  </head>
-  <body>
-    <h1>Tervehdys</h1>
-    <p id="target"></p>
-    <script>
-      "use strict";
-      const name = "Liul Getachew";
-      document.querySelector("#target").innerHTML =
-        "Hei, " + name + "!";
-    </script>
-  </body>
-</html>
+const name = prompt("Mikä on sinun nimesi?");
+console.log("Mukava tavata, " + name);

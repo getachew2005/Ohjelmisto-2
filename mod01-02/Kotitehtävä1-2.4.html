@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>Lajitteluhattu</title>
+</head>
+<body>
+    <h1>Tylypahkan lajitteluhattu</h1>
+
+<p id="vastaus"></p>
+
+<script>
+    "use strict";
+
+    const nimi = prompt("Mikä sinun nimesi on?");
+
+    const numeroluku = Math.floor(Math.random() * 4) + 1;
+
+    let tupa;
+
+    if (numeroluku === 1) {
+        tupa = "Rohkelikko";
+    } else if (numeroluku === 2) {
+        tupa = "Luihuinen";
+    } else if (numeroluku === 3) {
+        tupa = "Puuskupuh";
+    } else {
+        tupa = "Korpinkynsi";
+    }
+
+    document.querySelector("#vastaus").innerHTML =
+        nimi + ", sinä olet " + tupa + ".";
+</script>
+
+</body>
+</html>

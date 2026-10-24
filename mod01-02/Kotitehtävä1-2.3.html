@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>Kolmen luvun laskutoimitukset</title>
+</head>
+<body>
+    <h1>Kolmen luvun laskutoimitukset</h1>
+
+<p id="tulos"></p>
+
+<script>
+    "use strict";
+
+    const luku1 = parseInt(prompt("Anna ensimmäinen kokonaisluku:"), 10);
+    const luku2 = parseInt(prompt("Anna toinen kokonaisluku:"), 10);
+    const luku3 = parseInt(prompt("Anna kolmas kokonaisluku:"), 10);
+
+    const summa = luku1 + luku2 + luku3;
+    const tulo = luku1 * luku2 * luku3;
+    const keskiarvo = summa / 3;
+
+    document.querySelector("#tulos").innerHTML =
+        "Summa: " + summa + "<br>" +
+        "Tulo: " + tulo + "<br>" +
+        "Keskiarvo: " + keskiarvo;
+</script>
+
+</body>
+</html>

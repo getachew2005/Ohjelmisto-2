@@ -1,0 +1,65 @@
+
+/* Nettisivun teemavärit */
+
+:root {
+  --tausta: #001aff;
+  --kortti: #e30101;
+  --teksti: #17bf04;
+  --korostus: #8b5cf6;
+  --toinen-vari: #67e8f9;
+}
+
+/* Sivun yleinen ulkoasu */
+
+body {
+  background-color: var(--tausta);
+  color: var(--teksti);
+}
+
+/* Painikkeiden väri */
+
+.button {
+  background: linear-gradient(
+    90deg,
+    var(--korostus),
+    #6366f1
+  );
+  color: white;
+}
+
+/* Korttien ulkoasu */
+
+.card {
+  background-color: var(--kortti);
+  color: var(--teksti);
+  border: 1px solid #2803f9;
+  border-radius: 18px;
+}
+
+/* Otsikon liukuväri */
+
+h1 span {
+  background: linear-gradient(
+    90deg,
+    var(--korostus),
+    var(--toinen-vari)
+  );
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+
+body {
+  background-image: url("Marvel_Logo.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}

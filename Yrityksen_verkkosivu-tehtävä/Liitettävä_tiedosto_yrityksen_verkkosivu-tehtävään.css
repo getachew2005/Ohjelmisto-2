@@ -1,9 +1,9 @@
 /* Nettisivun teemavärit */
 
 :root {
-  --tausta: #001aff;
+  --tausta: #e80101;
   --kortti: #e30101;
-  --teksti: #17bf04;
+  --teksti: #000000;
   --korostus: #8b5cf6;
   --toinen-vari: #67e8f9;
 }
@@ -111,6 +111,6 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: rgb(244, 244, 246);
+    color: rgb(2, 146, 17);
     font-size: 18px;
 }

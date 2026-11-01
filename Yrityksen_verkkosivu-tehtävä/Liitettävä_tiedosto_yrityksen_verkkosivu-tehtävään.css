@@ -62,3 +62,55 @@ img {
   height: 200px;
   object-fit: cover;
 }
+
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #8b5cf6;
+  width: 100%;
+  padding: 10px 30px;
+  color: #06c235;
+}
+
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #8b5cf6;
+  width: 100%;
+  padding: 10px 30px;
+  color: #06c235;
+}
+
+
+.logo {
+    width: 120px;
+    height: auto;
+    margin-right: auto;
+}
+
+
+nav {
+    margin-left: auto;
+    transform: translateY(-160px);
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(244, 244, 246);
+    font-size: 18px;
+}

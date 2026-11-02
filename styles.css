@@ -1,0 +1,22 @@
+.box {
+  width: 200px;
+  padding: 20px;
+  border: 4px solid rgb(48, 187, 5);
+  margin: 20px;
+  background-color: rgb(244, 214, 17);
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #003cff;
+  color: #e51c1c;
+  padding: 20px;
+}

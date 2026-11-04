@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>Nopan heittäminen</title>
+</head>
+<body>
+
+<script>
+    let maara = Number(prompt("Kuinka monta kertaa heitetään noppaa?"));
+
+    let summa = 0;
+
+    for (let i = 0; i < maara; i++) {
+        let silmaluku = Math.floor(Math.random() * 6) + 1;
+
+        summa = summa + silmaluku;
+    }
+
+    document.write("Heittojen silmälukujen summa on " + summa);
+</script>
+
+</body>
+</html>

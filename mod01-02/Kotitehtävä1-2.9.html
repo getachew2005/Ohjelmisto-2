@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>Alkuluvun tarkistus</title>
+</head>
+<body>
+
+<script>
+    let luku = Number(prompt("Anna kokonaisnumero:"));
+
+    let alkuluku = true;
+
+    if (luku <= 1) {
+        alkuluku = false;
+    } else {
+
+        for (let i = 2; i < luku; i++) {
+
+            if (luku % i == 0) {
+                alkuluku = false;
+            }
+
+        }
+    }
+
+    if (alkuluku == true) {
+        document.write(luku + " on ensimmäinen luku.");
+    } else {
+        document.write(luku + " ei ole ensimmäinen numero.");
+    }
+
+</script>
+
+</body>
+</html>

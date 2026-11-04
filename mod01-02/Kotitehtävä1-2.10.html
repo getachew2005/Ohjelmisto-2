@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>Noppien todennäköisyys</title>
+</head>
+<body>
+
+<script>
+    let nopat = Number(prompt("Monta noppaa heitetään?"));
+    let haluttuSumma = Number(prompt("Minkä silmälukujen summan sinä haluat?"));
+
+    let osumat = 0;
+    let heitot = 10000;
+
+    for (let i = 0; i < heitot; i++) {
+
+        let summa = 0;
+
+        for (let j = 0; j < nopat; j++) {
+            let silmaluku = Math.floor(Math.random() * 6) + 1;
+            summa = summa + silmaluku;
+        }
+
+        if (summa == haluttuSumma) {
+            osumat++;
+        }
+    }
+
+    let todennakoisyys = (osumat / heitot) * 100;
+
+    document.write("Todennäköisyys saada summa " + haluttuSumma +
+        " " + nopat + " nopalla on " +
+        todennakoisyys.toFixed(2) + "%");
+
+</script>
+
+</body>
+</html>

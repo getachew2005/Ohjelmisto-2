@@ -1,1 +1,1 @@
-Olen tehnyt moduulin 1-3 tehtävät.
+Olen tehnyt moduulien 1-3 tehtävät.

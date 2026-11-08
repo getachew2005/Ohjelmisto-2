@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nopanheitto</title>
+</head>
+<body>
+
+    <h2>Nopanheiton tulokset</h2>
+
+    <ul id="lista"></ul>
+
+    <script>
+
+        let tahkot = Number(prompt("Kuinka monta tahkoa nopassa on?"));
+
+        function heitaNoppaa(tahkot) {
+            return Math.floor(Math.random() * tahkot) + 1;
+        }
+
+        let lista = document.getElementById("lista");
+        let tulos;
+
+        do {
+            tulos = heitaNoppaa(tahkot);
+
+            let kohta = document.createElement("li");
+            kohta.textContent = tulos;
+            lista.appendChild(kohta);
+
+        } while (tulos !== tahkot);
+
+    </script>
+
+</body>
+</html>

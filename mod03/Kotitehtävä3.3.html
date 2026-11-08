@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Koirien nimet</title>
+</head>
+<body>
+
+    <h2>Koirien nimet</h2>
+
+    <ul id="lista"></ul>
+
+    <script>
+        let koirat = [];
+
+        for (let i = 0; i < 6; i++) {
+            let nimi = prompt("Anna koiran nimi:");
+            koirat.push(nimi);
+        }
+
+        koirat.sort();
+
+        koirat.reverse();
+
+        let lista = document.getElementById("lista");
+
+        for (let i = 0; i < koirat.length; i++) {
+            let kohta = document.createElement("li");
+            kohta.textContent = koirat[i];
+            lista.appendChild(kohta);
+        }
+    </script>
+
+</body>
+</html>

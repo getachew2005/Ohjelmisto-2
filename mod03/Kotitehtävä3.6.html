@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nopanheitto</title>
+</head>
+<body>
+
+    <h2>Nopanheiton tulokset</h2>
+
+    <ul id="lista"></ul>
+
+    <script>
+
+        function heitaNoppaa() {
+            return Math.floor(Math.random() * 6) + 1;
+        }
+
+        let lista = document.getElementById("lista");
+
+        let tulos;
+
+        do {
+            tulos = heitaNoppaa();
+
+            let kohta = document.createElement("li");
+            kohta.textContent = tulos;
+            lista.appendChild(kohta);
+
+        } while (tulos !== 6);
+
+    </script>
+
+</body>
+</html>

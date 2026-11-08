@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Merkkijonojen yhdistäminen</title>
+</head>
+<body>
+
+    <h2>Yhdistetty merkkijono:</h2>
+
+    <p id="tulos"></p>
+
+    <script>
+
+        let nimet = ["Johnny", "DeeDee", "Joey", "Marky"];
+
+        function concat(taulukko) {
+            let merkkijono = "";
+
+            for (let i = 0; i < taulukko.length; i++) {
+                merkkijono += taulukko[i];
+            }
+
+            return merkkijono;
+        }
+
+        let vastaus = concat(nimet);
+
+        document.getElementById("tulos").textContent = vastaus;
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Parilliset luvut</title>
+</head>
+<body>
+
+    <h2>Parilliset luvut</h2>
+
+    <script>
+
+        let luvut = [2, 7, 4, 9, 12, 15, 8];
+
+        function even(taulukko) {
+            let parilliset = [];
+
+            for (let i = 0; i < taulukko.length; i++) {
+                if (taulukko[i] % 2 === 0) {
+                    parilliset.push(taulukko[i]);
+                }
+            }
+
+            return parilliset;
+        }
+
+        let uusiTaulukko = even(luvut);
+
+        console.log("Alkuperäinen taulukko:", luvut);
+        console.log("Parilliset luvut:", uusiTaulukko);
+
+    </script>
+
+</body>
+</html>

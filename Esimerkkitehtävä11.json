@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Nukkuva kissa",
+    "description": "Tässä kuvassa kissa nukkuu.",
+    "address": "http://placecats.com/321/241"
+  },
+  {
+    "name": "Makaava kissa",
+    "description": "Tässä kuvassa kissa makaa.",
+    "address": "http://placecats.com/421/251"
+  }
+]

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<images>
+    <picture>
+        <name> Nukkuva kissa </name>
+        <description> Tässä kuvassa kissa nukkuu. </description>
+        <address> http://placecats.com/321/241 </address>
+    </picture>
+    <picture>
+        <name> Makaava kissa </name>
+        <description> Tässä kuvassa kissa makaa. </description>
+        <address> http://placecats.com/421/251 </address>
+    </picture>
+</images>
